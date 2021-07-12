@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.calculator, Calculator)
 
     def test_add(self):
-        test_data = CsvReader('/src/additionTest.csv').data
+        test_data = CsvReader('/Tests/Data/addition.csv').data
        # pprint(test_data)
         for row in test_data:
             self.assertEqual(self.calculator.add(int(row['Value 1']), int(row['Value 2'])), int(row['Result']))
@@ -24,7 +24,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_minus(self):
         print('----------------------in minus test ---------------')
-        test_data2 = CsvReader('/src/subtractionTests.csv').data
+        test_data2 = CsvReader('/Tests/Data//subtraction.csv').data
         #pprint(test_data2)
         for row in test_data2:
             # result = Calculator.add(10, 5)
