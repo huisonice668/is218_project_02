@@ -3,7 +3,6 @@ def division(x,y):
         x = float(x)
         y = float(y)
         c = y / x
-
     except ZeroDivisionError:
-        c = 0
+        print('Can not divide by zero')
     return c
