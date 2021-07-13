@@ -1,5 +1,9 @@
 from Calculator.Addition import addition
 from Calculator.Subtraction import subtraction
+from Calculator.Multiplication import multiplication
+from Calculator.Square import square
+from Calculator.SquareRoot import squareRoot
+from Calculator.Division import division
 
 class Calculator:
 
@@ -16,24 +20,18 @@ class Calculator:
         self.result = subtraction(x, y)
         return self.result
 
-
-'''''''''
-    def multiply(self, x, y):
-        return multiplication(x, y)
-        #return x * y
-
     def divide(self, x, y):
-        return division(x, y)
-        if y == 0:
-            raise ValueError("Can not divide by zero")
-        return x / y
+        self.result = division(x, y)
+        return self.result
+
+    def multiply(self, x, y):
+        self.result = multiplication(x, y)
+        return self.result
 
     def square(self, x):
-        return squaring(x)
-       # return x * x
+        self.result = square(x)
+        return self.result
 
     def squareRoot(self, x):
-        return squareRoots(x)
-       # return math.sqrt(x)
-'''''''''''
-
+        self.result = squareRoot(x)
+        return self.result
