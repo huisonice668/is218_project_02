@@ -2,7 +2,10 @@ language: python
 python:
   - "3.7"
 install:
-  - pip -m unittest discover -s Tests
+  - pip install -r requirements.txt
+
+script:
+  python -m unittest discover -s Tests
 
 branches:
   only:
