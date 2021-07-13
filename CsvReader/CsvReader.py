@@ -18,6 +18,7 @@ class CsvReader:
                     print (row)
                     self.data.append(row)
         pass
+    
 
     def return_data_as_objects(self, class_name):
         objects = []
