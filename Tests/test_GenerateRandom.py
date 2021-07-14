@@ -14,6 +14,8 @@ class MyTestCase(unittest.TestCase):
     def test_no_seed_integers(self):
         print(self.generateRandom.no_seed_integers(0, 10))
 
+    def test_no_seed_floats(self):
+        print(self.generateRandom.no_seed_floats(0.0, 10.0))
 
 
 if __name__ ==  '__main__':
