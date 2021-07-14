@@ -1,16 +1,16 @@
 import unittest
 
 #from Calculator.Calculator import Calculator
-from Calculator.Statistics import Statisctis
+from Statistics.Statistics import Statistics
 
 
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.statisctis = Statisctis()
+        self.statistics = Statistics('Tests/Data/UnitTestAddition.csv')
 
     def test_instantiate_statisctis(self):
-        self.assertIsInstance(self.statisctis, Statisctis)
+        self.assertIsInstance(self.statistics, Statistics)
 
     def test_mean(self):
         pass
