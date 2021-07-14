@@ -4,6 +4,7 @@ from Randoms.NoSeedFloats import noSeedFloats
 from Randoms.WithSeedInt import withSeedInt
 from Randoms.WithSeedFloats import withSeedFloats
 from Randoms.WithSeedIntList import withSeedIntList
+from Randoms.WithSeedFloatsList import withSeedFloatsList
 
 class GenerateRandom():
     num = 0
@@ -22,6 +23,7 @@ class GenerateRandom():
         self.num = noSeedFloats(low, high)
         return self.num
 
+
     # random number with a seed- integers
     def with_seed_integers(self, low, high, seedValue):
         self.num = withSeedInt(low, high, seedValue)
@@ -33,7 +35,6 @@ class GenerateRandom():
         return self.num
 
 
-
     # generate a list of N random numbers with a seed - integers
     def with_seed_integers_list(self, low, high, count, seedValue):
         self.numList = withSeedIntList(low, high, count, seedValue)
@@ -41,4 +42,5 @@ class GenerateRandom():
 
     # generate a list of N random numbers with a seed - floats
     def with_seed_floats_list(self, low, high, count, seedValue):
-        pass
+        self.numList = withSeedFloatsList(low, high, count, seedValue)
+        return self.numList

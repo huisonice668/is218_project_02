@@ -36,7 +36,12 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.generateRandom.with_seed_integers_list(2, 20, 6, 8), self.generateRandom.with_seed_integers_list(2, 20, 6, 8))
             self.assertEqual(self.generateRandom.with_seed_integers_list(3, 25, 6, 8), self.generateRandom.with_seed_integers_list(3, 25, 6, 8))
 
-
+    def test_with_seed_floats_list(self):
+        for i in range(3):
+            #print(self.generateRandom.with_seed_floats_list(2.0, 20.0, 6, 8))
+            #print(self.generateRandom.with_seed_floats_list(3.0, 25.0, 6, 8))
+            self.assertEqual(self.generateRandom.with_seed_integers_list(2, 20, 6, 8), self.generateRandom.with_seed_integers_list(2, 20, 6, 8))
+            self.assertEqual(self.generateRandom.with_seed_integers_list(3, 25, 6, 8), self.generateRandom.with_seed_integers_list(3, 25, 6, 8))
 
 if __name__ ==  '__main__':
     unittest.main()
