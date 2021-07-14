@@ -4,7 +4,7 @@ This statictics calculator consists by mainly three modules:
 
 Basic Calculator
 
-Functions:
+Basic Calculation Functions:
 1. addition
 2. subtraction
 3. multiplication
@@ -12,24 +12,25 @@ Functions:
 5. square
 6. square root
 
-Random Numbers Generator:
+Random Numbers Generator Functions:
 1. single number - no seed - float
-2. single number - no seed - integer
+2. single number - no seed\t - integer
 3. single number - with seed - float
 4. single number - with seed - integer
 5. list of numbers - with seed -floats
 6. list of numbers - with seed - integers
 
-Statictics:
-
-population sampling functions:
-1. simple random sampling
-2. confidence interval for a sample
-3. margin of error
-
-statistics functions:
+Simple Statistics Functions:
 1. mean
 2. median
 3. mode
 4. standard deviation
 5. variance
+
+
+Population Sampling Statictics Functions:
+1. simple random sampling
+2. confidence interval for a sample
+3. margin of error
+
+
