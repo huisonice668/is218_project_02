@@ -29,6 +29,12 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.generateRandom.with_seed_floats(0.0, 10.0, 6), self.generateRandom.with_seed_floats(0.0, 10.0, 6))
             self.assertEqual(self.generateRandom.with_seed_floats(20.0, 99.0, 8), self.generateRandom.with_seed_floats(20.0, 99.0, 8))
 
+    def test_with_seed_integers_list(self):
+        for i in range(3):
+            #print(self.generateRandom.with_seed_integers_list(2, 20, 6, 8))
+            #print(self.generateRandom.with_seed_integers_list(3, 25, 6, 8))
+            self.assertEqual(self.generateRandom.with_seed_integers_list(2, 20, 6, 8), self.generateRandom.with_seed_integers_list(2, 20, 6, 8))
+            self.assertEqual(self.generateRandom.with_seed_integers_list(3, 25, 6, 8), self.generateRandom.with_seed_integers_list(3, 25, 6, 8))
 
 
 

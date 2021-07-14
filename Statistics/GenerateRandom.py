@@ -3,9 +3,11 @@ from Randoms.NoSeedInt import noSeedInt
 from Randoms.NoSeedFloats import noSeedFloats
 from Randoms.WithSeedInt import withSeedInt
 from Randoms.WithSeedFloats import withSeedFloats
+from Randoms.WithSeedIntList import withSeedIntList
 
 class GenerateRandom():
-    num = 0;
+    num = 0
+    numList = []
 
     def __init__(self):
         pass
@@ -31,9 +33,12 @@ class GenerateRandom():
         return self.num
 
 
+
     # generate a list of N random numbers with a seed - integers
-    def with_seed_integers_list(self, low, high, count):
-        pass
+    def with_seed_integers_list(self, low, high, count, seedValue):
+        self.numList = withSeedIntList(low, high, count, seedValue)
+        return self.numList
+
     # generate a list of N random numbers with a seed - floats
-    def with_seed_floats_list(self, low, high, count):
+    def with_seed_floats_list(self, low, high, count, seedValue):
         pass
