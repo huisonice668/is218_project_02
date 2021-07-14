@@ -3,7 +3,7 @@ from Calculator.Division import division
 
 def mean(data):
     # throw exception for empty list
-    if data == NULL:
+    if len(data) == 0:
         raise Exception('Can not have an empty list')
 
     value_counter = len(data)
