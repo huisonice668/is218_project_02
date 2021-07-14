@@ -32,10 +32,14 @@ class MyTestCase(unittest.TestCase):
             if i == 1:
                 randomList = rand.with_seed_floats_list(rand_low, rand_high, rand_count, rand_seed)
 
-            #print(randomList)
-            myResult = round(self.statistics.mean(randomList), 8)
-            realResult = round(statistics.mean(randomList), 8)
-            self.assertEqual(myResult, realResult)
+            # test if the program will throw an exception if the list is empty
+            if len(randomList) == 0:
+                self.assertRaises(ValueError)
+            else:
+                #print(randomList)
+                myResult = round(self.statistics.mean(randomList), 8)
+                realResult = round(statistics.mean(randomList), 8)
+                self.assertEqual(myResult, realResult)
 
 
     def test_median(self):
