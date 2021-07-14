@@ -4,7 +4,7 @@ from Calculator.Division import division
 def mean(data):
     # throw exception for empty list
     if len(data) == 0:
-        raise Exception('Can not have an empty list')
+        raise ValueError('Can not have an empty list')
 
     value_counter = len(data)
     sum = 0
