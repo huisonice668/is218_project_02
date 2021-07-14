@@ -14,7 +14,7 @@ Basic Calculation Functions:
 
 Random Numbers Generator Functions:
 1. single number - no seed - float
-2. single number - no seed\t - integer
+2. single number - no seed - integer
 3. single number - with seed - float
 4. single number - with seed - integer
 5. list of numbers - with seed -floats
