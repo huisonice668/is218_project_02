@@ -1,6 +1,6 @@
 from Calculator.Calculator import Calculator
-from Statistics.SampleMean import SampleMean
-from Statistics.Mean import Mean
+from Statistics import Mean
+from Statistics import SampleMean
 from CsvReader.CsvReader import CsvReader
 
 
