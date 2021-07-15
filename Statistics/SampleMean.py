@@ -8,7 +8,7 @@ def sample_mean(data, sample_size):
 
     # check that sample size is not 0
     if sample_size == 0:
-        raise Exception('Sample size can not be zero')
+        raise ValueError('Sample size can not be zero')
 
     # check that sample size is not larger than population size
     if sample_size > len(data):

@@ -5,6 +5,8 @@ from Statistics.Mode import mode
 from Statistics.SampleMean import sample_mean
 from Statistics.SampleSD import sample_sd
 from Statistics.SampleVar import sample_var
+from Statistics.ConfidenceInterval import confidence_interval
+from Statistics.MarginOfError import margin_of_error
 
 from Statistics import SampleMean
 from Statistics.GenerateRandom import GenerateRandom
@@ -44,6 +46,14 @@ class Statistics(Calculator):
         self.result = sample_sd(data)
         return self.result
 
+
+    def confidence_interval(self, data, level):
+        self.result = confidence_interval(data, level)
+        return self.result
+
+    def margin_of_error(self, data, q):
+        self.result = margin_of_error(data, q)
+        return self.result
 
 
     def sample_mean(self, data, sample_size):
